@@ -18,5 +18,6 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', function () {
-    return view('rem');
+    $nom = 'Fati';
+    return view('welcome', compact('nom'));
 });
